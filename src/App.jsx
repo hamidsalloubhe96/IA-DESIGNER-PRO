@@ -1,71 +1,61 @@
 import { useState } from "react";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./pages/Dashboard";
-import PromptGenerator from "./pages/PromptGenerator";
-import ImageRetouchStudio from "./pages/ImageRetouchStudio";
-import AssetsLibrary from "./pages/AssetsLibrary";
-import Placeholder from "./pages/Placeholder";
+import MainShell from "./layout/MainShell";
 
 function App() {
-  const [activePage, setActivePage] = useState("dashboard");
-
-  const [smartData, setSmartData] = useState({
-    visualType: "",
-    category: "",
-    sector: "",
-    style: "",
-    font: "",
-    palette: "",
-    promo: "",
-    quickPrompt: "",
-    adPrompt: "",
-    cinePrompt: "",
-    favorites: []
+  const [notification, setNotification] = useState({
+    type: "",
+    message: "",
+    visible: false
   });
 
-  const renderPage = () => {
-    switch (activePage) {
-      case "dashboard":
-        return <Dashboard />;
+  const playSound = (type) => {
+    if (type === "success") {
+      const audio = new Audio("/success.mp3");
+      audio.volume = 0.6;
+      audio.play();
+    }
 
-      case "generator":
-        return (
-          <PromptGenerator
-            smartData={smartData}
-            setSmartData={setSmartData}
-          />
-        );
-
-      case "retouch":
-        return <ImageRetouchStudio />;
-
-      case "typo":
-        return <Placeholder title="Module en construction..." />;
-
-      case "assets":
-        return <AssetsLibrary smartData={smartData} />;
-
-      case "analyzer":
-        return <Placeholder title="Module en construction..." />;
-
-      case "vault":
-        return <Placeholder title="Module en construction..." />;
-
-      case "history":
-        return <Placeholder title="Module en construction..." />;
-
-      case "export":
-        return <Placeholder title="Module en construction..." />;
-
-      default:
-        return <Dashboard />;
+    if (type === "error") {
+      const audio = new Audio("/error.mp3");
+      audio.volume = 0.6;
+      audio.play();
     }
   };
 
+  const showNotification = (type, message) => {
+    playSound(type);
+
+    setNotification({
+      type,
+      message,
+      visible: true
+    });
+
+    setTimeout(() => {
+      setNotification((prev) => ({
+        ...prev,
+        visible: false
+      }));
+    }, 2500);
+  };
+
   return (
-    <div className="flex bg-black min-h-screen text-white">
-      <Sidebar activePage={activePage} setActivePage={setActivePage} />
-      <div className="flex-1 p-8">{renderPage()}</div>
+    <div className="min-h-screen bg-black text-white relative">
+      <MainShell showNotification={showNotification} />
+
+      {notification.visible && (
+        <div
+          className={`fixed top-6 right-6 z-50 px-6 py-4 rounded-2xl border backdrop-blur-xl shadow-2xl animate-slideIn ${
+            notification.type === "success"
+              ? "bg-green-500/10 border-green-500/20 text-green-400"
+              : notification.type === "error"
+              ? "bg-red-500/10 border-red-500/20 text-red-400"
+              : "bg-yellow-500/10 border-yellow-500/20 text-yellow-400"
+          }`}
+        >
+          {notification.message}
+        </div>
+      )}
     </div>
   );
 }

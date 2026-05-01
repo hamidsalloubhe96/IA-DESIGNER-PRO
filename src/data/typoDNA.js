@@ -1,43 +1,86 @@
 export const typoDNA = {
   luxe: {
-    title: ["Cinzel", "Cormorant Garamond", "Bodoni Moda"],
-    subtitle: ["Montserrat", "Raleway", "Lato"],
-    cta: ["Poppins Bold", "Montserrat SemiBold"],
-    advice: "Utiliser des polices serif élégantes pour les titres avec beaucoup d'espace et des CTA sobres premium."
+    title: ["Cinzel", "Cormorant Garamond", "Playfair Display"],
+    cta: ["Montserrat", "Poppins"]
   },
 
-  cosmetique: {
-    title: ["Playfair Display", "Cormorant", "DM Serif"],
-    subtitle: ["Quicksand", "Raleway", "Nunito"],
-    cta: ["Poppins SemiBold", "Montserrat Bold"],
-    advice: "Privilégier finesse, féminité et respiration visuelle avec des contrastes doux."
+  beauty: {
+    title: ["Playfair Display", "Cormorant", "DM Serif Display"],
+    cta: ["Poppins", "Montserrat"]
   },
 
-  corporate: {
-    title: ["Montserrat Bold", "Oswald", "Roboto Condensed"],
-    subtitle: ["Open Sans", "Lato", "Roboto"],
-    cta: ["Poppins Bold", "Montserrat ExtraBold"],
-    advice: "Choisir des polices droites, très lisibles, rassurantes et structurées."
+  jewelry: {
+    title: ["Cinzel", "Bodoni Moda", "Cormorant"],
+    cta: ["Montserrat", "Raleway"]
   },
 
-  food: {
-    title: ["Bebas Neue", "Anton", "Oswald"],
-    subtitle: ["Poppins", "Open Sans", "Nunito"],
-    cta: ["Anton", "Montserrat Bold"],
-    advice: "Miser sur des titres gourmands puissants avec CTA très visibles et promotionnels."
+  restaurant: {
+    title: ["Bebas Neue", "Cormorant", "Playfair Display"],
+    cta: ["Montserrat", "Anton"]
   },
 
-  tech: {
-    title: ["Orbitron", "Exo", "Rajdhani"],
-    subtitle: ["Montserrat", "Roboto", "Poppins"],
-    cta: ["Exo Bold", "Montserrat Bold"],
-    advice: "Prendre des polices modernes futuristes avec sensation digitale nette."
+  fastfood: {
+    title: ["Anton", "Bebas Neue", "Oswald"],
+    cta: ["Montserrat", "League Spartan"]
   },
 
-  sport: {
-    title: ["Anton", "Teko", "Bebas Neue"],
-    subtitle: ["Montserrat", "Barlow", "Oswald"],
-    cta: ["Anton", "Teko Bold"],
-    advice: "Utiliser des caractères massifs, agressifs, dynamiques avec impact immédiat."
-  }
+  patisserie: {
+    title: ["Great Vibes", "Playfair Display", "Cormorant"],
+    cta: ["Poppins", "Montserrat"]
+  },
+
+  finance: {
+  title: ["Merriweather", "Playfair Display", "Cormorant"],
+  cta: ["Montserrat", "Inter"]
+},
+
+assurance: {
+  title: ["Merriweather", "DM Serif Display", "Cormorant"],
+  cta: ["Inter", "Montserrat"]
+},
+
+telecom: {
+  title: ["Orbitron", "Rajdhani", "Exo 2"],
+  cta: ["Montserrat", "Poppins"]
+},
+
+gadgets: {
+  title: ["Orbitron", "Rajdhani", "Bebas Neue"],
+  cta: ["League Spartan", "Montserrat"]
+},
+
+saas: {
+  title: ["Inter", "Poppins", "Montserrat"],
+  cta: ["Inter", "League Spartan"]
+},
+
+automobile: {
+  title: ["Bebas Neue", "Oswald", "Rajdhani"],
+  cta: ["Montserrat", "League Spartan"]
+},
+
+gym: {
+  title: ["Anton", "Bebas Neue", "Oswald"],
+  cta: ["League Spartan", "Montserrat"]
+},
+
+tourisme: {
+  title: ["Playfair Display", "Cormorant", "DM Serif Display"],
+  cta: ["Montserrat", "Raleway"]
+},
+
+mariage: {
+  title: ["Great Vibes", "Playfair Display", "Cormorant"],
+  cta: ["Poppins", "Montserrat"]
+},
+
+islam: {
+  title: ["Cinzel", "Cormorant", "DM Serif Display"],
+  cta: ["Montserrat", "Poppins"]
+},
+
+ramadan: {
+  title: ["Cinzel", "Playfair Display", "Cormorant"],
+  cta: ["Montserrat", "Raleway"]
+}
 };

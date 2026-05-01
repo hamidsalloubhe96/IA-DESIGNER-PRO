@@ -1,89 +1,73 @@
 export const assetsDNA = {
   badges: [
     {
-      title: "Badge -20% Luxury Gold",
-      preview: "Luxury golden discount badge with glossy reflections",
-      prompt: "Create a premium transparent PNG luxury gold discount badge -20% OFF, glossy metallic effect, elegant shadows, commercial advertising asset."
+      title: "Badge Promo Premium",
+      preview: "Glossy commercial discount badge",
+      prompt: "Create a premium transparent PNG glossy discount badge for commercial advertising.",
+      injectText: "premium glossy promotional discount badge"
     },
     {
       title: "Badge Nouveau Produit",
-      preview: "Red premium new arrival commercial sticker",
-      prompt: "Create a premium transparent PNG NEW ARRIVAL badge, red glossy sticker, high visibility ecommerce advertising style."
-    },
-    {
-      title: "Badge Livraison Gratuite",
-      preview: "Blue delivery free rounded ecommerce badge",
-      prompt: "Create a transparent PNG FREE DELIVERY badge, modern rounded blue ecommerce commercial sticker."
+      preview: "New arrival commercial sticker",
+      prompt: "Create a transparent PNG new arrival badge, premium ecommerce style.",
+      injectText: "new arrival commercial badge"
     }
   ],
 
   cta: [
     {
-      title: "CTA Acheter Maintenant",
-      preview: "Gold premium shop now button",
-      prompt: "Create a transparent PNG premium SHOP NOW call to action button, glossy gold luxury ecommerce style."
-    },
-    {
-      title: "CTA Commander",
-      preview: "Red commercial order now button",
-      prompt: "Create a transparent PNG ORDER NOW button, aggressive commercial red glossy style."
+      title: "CTA Commander Maintenant",
+      preview: "Strong commercial order now button",
+      prompt: "Create a transparent PNG ORDER NOW commercial CTA button.",
+      injectText: "strong commercial order now CTA"
     },
     {
       title: "CTA Réserver",
-      preview: "Elegant black reservation CTA",
-      prompt: "Create a transparent PNG RESERVE NOW elegant black luxury button."
+      preview: "Elegant reservation call to action",
+      prompt: "Create a transparent PNG RESERVE NOW premium CTA.",
+      injectText: "premium reservation CTA"
     }
   ],
 
   glow: [
     {
-      title: "Luxury Glow Gold",
-      preview: "Soft premium golden light halo",
-      prompt: "Create transparent PNG luxury golden glow effect, premium soft halo for product advertising enhancement."
+      title: "Luxury Glow",
+      preview: "Premium golden light halo",
+      prompt: "Create transparent PNG premium luxury glow effect.",
+      injectText: "premium luminous glow effect"
     },
     {
-      title: "Blue Neon Glow",
-      preview: "Tech electric blue light effect",
-      prompt: "Create transparent PNG electric blue neon glow, futuristic technology advertising effect."
+      title: "Neon Tech Glow",
+      preview: "Blue futuristic neon halo",
+      prompt: "Create transparent PNG futuristic neon blue glow.",
+      injectText: "futuristic neon glow effect"
     }
   ],
 
   social: [
     {
-      title: "Social Icons Gold",
-      preview: "Instagram Facebook WhatsApp premium gold icons",
-      prompt: "Create transparent PNG luxury gold social media icons pack, instagram facebook whatsapp clean premium style."
-    },
-    {
-      title: "Social Icons White",
-      preview: "Minimal white social icons",
-      prompt: "Create transparent PNG minimal white social icons set for dark advertising designs."
+      title: "Social Media Icons",
+      preview: "Premium social icons pack",
+      prompt: "Create transparent PNG premium social media icons.",
+      injectText: "premium social media icon pack"
     }
   ],
 
   backgrounds: [
     {
-      title: "Black Luxury Marble",
-      preview: "Premium dark marble advertising background",
-      prompt: "Create premium black marble luxury advertising background, elegant dark reflections, studio commercial composition."
-    },
-    {
-      title: "Blue Neon Tech",
-      preview: "Cyber technology luminous background",
-      prompt: "Create futuristic blue neon digital advertising background, glowing particles, cyber tech atmosphere."
+      title: "Luxury Background Texture",
+      preview: "Elegant premium textured background",
+      prompt: "Create premium luxury advertising background texture.",
+      injectText: "premium textured background overlay"
     }
   ],
 
   png: [
     {
-      title: "Luxury Smoke",
-      preview: "Elegant transparent smoke effect",
-      prompt: "Create transparent PNG luxury smoke overlay, soft elegant commercial visual effect."
-    },
-    {
-      title: "Golden Particles",
-      preview: "Premium gold spark particles",
-      prompt: "Create transparent PNG premium floating gold particles, luxury advertising enhancement."
+      title: "Smoke / Particles Overlay",
+      preview: "Atmospheric visual enhancement",
+      prompt: "Create transparent PNG smoke and particles overlay.",
+      injectText: "atmospheric smoke particle overlay"
     }
   ]
 };
